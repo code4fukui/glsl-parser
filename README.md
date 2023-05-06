@@ -19,10 +19,11 @@ goals of this compiler.
 ## Parsing
 
 ```javascript
-import { parser, generate } from "https://code4fpkui.github.io/glsl-parser/GLSL.js";
+import GLSL from "https://code4fukui.github.io/glsl-parser/GLSL.js";
 
 // To parse a GLSL program's source code into an AST:
 const ast = GLSL.parser.parse("float a = 1.0;");
+console.log(ast);
 
 // To turn a parsed AST back into a source program
 const program = GLSL.generate(ast);
@@ -59,9 +60,10 @@ types of data. The Shaderfrog GLSL preprocessor can't be used as a C/C++
 preprocessor without modification.
 
 ```javascript
-import preprocess from "https://code4fpkui.github.io/glsl-parser/Preprocessor.js";
+import preprocess from "https://code4fukui.github.io/glsl-parser/Preprocessor.js";
 
 // Preprocess a program
+const options = {};
 console.log(preprocess(`
   #define a 1
   float b = a;
