@@ -1,4 +1,4 @@
-import type { AstNode, LocationObject } from './node';
+import type { AstNode, LocationObject } from './node.ts';
 
 export type ScopeIndex = {
   [name: string]: { references: AstNode[] };

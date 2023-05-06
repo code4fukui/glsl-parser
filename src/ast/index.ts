@@ -1,2 +1,2 @@
-export * from './ast';
-export * from './node';
+export * from './ast.ts';
+export * from './node.ts';

@@ -1,4 +1,4 @@
-import type { PreprocessorProgram } from './preprocessor';
+import type { PreprocessorProgram } from './preprocessor.ts';
 
 export type ParserOptions = {};
 

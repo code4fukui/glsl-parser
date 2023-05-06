@@ -1,4 +1,4 @@
-import generate from './parser/generator';
-import parser from './parser/parser';
+import generate from './parser/generator.ts';
+import * as parser from './parser/parser.js';
 
-export = { generate, parser };
+export default { generate, parser };

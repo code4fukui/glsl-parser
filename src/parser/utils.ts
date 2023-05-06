@@ -1,4 +1,4 @@
-import type { AstNode, Scope } from '../ast';
+import type { AstNode, Scope } from '../ast/index.ts';
 
 export const renameBindings = (
   scope: Scope,

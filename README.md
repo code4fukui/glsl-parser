@@ -9,34 +9,28 @@ The parser uses PEG grammar via the Peggy Javascript library. The PEG grammars
 for both the preprocessor and main parser are in the source code [on
 Github](https://github.com/ShaderFrog/glsl-parser).
 
-This library has limited Typescript support.
+This library has limited Typescript and JavaScript support.
 
 See [the state of this library](#state-of-this-library) for limitations and
 goals of this compiler.
 
 # Usage
 
-## Installation
-
-```bash
-npm install --save @shaderfrog/glsl-parser
-```
-
 ## Parsing
 
 ```javascript
-import { parser, generate } from '@shaderfrog/glsl-parser';
+import { parser, generate } from "https://code4fpkui.github.io/glsl-parser/GLSL.js";
 
 // To parse a GLSL program's source code into an AST:
-const ast = parser.parse('float a = 1.0;');
+const ast = GLSL.parser.parse("float a = 1.0;");
 
 // To turn a parsed AST back into a source program
-const program = generate(ast);
+const program = GLSL.generate(ast);
 ```
 
 The parser accepts an optional second `options` argument:
 ```js
-parser.parse('float a = 1.0;', options);
+GLSL.parser.parse('float a = 1.0;', options);
 ```
 
 Where `options` is:
@@ -65,7 +59,7 @@ types of data. The Shaderfrog GLSL preprocessor can't be used as a C/C++
 preprocessor without modification.
 
 ```javascript
-import preprocess from '@shaderfrog/glsl-parser/preprocessor';
+import preprocess from "https://code4fpkui.github.io/glsl-parser/Preprocessor.js";
 
 // Preprocess a program
 console.log(preprocess(`
@@ -103,7 +97,7 @@ import {
   preprocessComments,
   generate,
   parser,
-} from '@shaderfrog/glsl-parser/preprocessor';
+} from "https://code4fpkui.github.io/glsl-parser/Preprocessor.js";;
 
 // Remove comments before preprocessing
 const commentsRemoved = preprocessComments(`float a = 1.0;`)

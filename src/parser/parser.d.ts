@@ -1,4 +1,4 @@
-import type { AstNode, Program } from '../ast';
+import type { AstNode, Program } from '../ast/index.ts';
 
 export type ParserOptions = Partial<{
   quiet: boolean;
@@ -9,7 +9,7 @@ export type ParserOptions = Partial<{
 // Allow to fetch util functions from parser directly. I'd like to inline those
 // functions directly in this file, but then the tests can't find it since jest
 // can't import from .d.ts files as there's no accompanying ts/js file
-export { renameBindings, renameFunctions } from './utils';
+export { renameBindings, renameFunctions } from './utils.ts';
 
 export type Parse = {
   (input: string, options?: ParserOptions): Program;

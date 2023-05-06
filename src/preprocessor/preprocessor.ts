@@ -1,4 +1,4 @@
-import { visit, Path, NodeVisitor, AstNode } from '../ast';
+import { visit, Path, NodeVisitor, AstNode } from '../ast/index.ts';
 import {
   PreprocessorAstNode,
   PreprocessorConditionalNode,
@@ -7,7 +7,7 @@ import {
   PreprocessorIfNode,
   PreprocessorLiteralNode,
   PreprocessorSegmentNode,
-} from './preprocessor-node';
+} from './preprocessor-node.ts';
 
 export type PreprocessorProgram = {
   type: string;
