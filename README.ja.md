@@ -2,7 +2,7 @@
 
 [Shaderfrog](https://shaderfrog.com/app)のGLSL コンパイラは、オープンソースのGLSL 1.00および3.00パーサーとプリプロセッサで、[GLSLに戻してコンパイル](src/parser/generator.ts)します。パーサーとプリプロセッサの両方がコメントと空白を保持することができます。
 
-パーサーは、PeggyJavaScriptライブラリを使ってPEG文法を使います。プリプロセッサーとメインパーサーの両方のPEGグラマーがGithub[のソースコード](https://github.com/ShaderFrog/glsl-parser)にあります。 
+パーサーは、PeggyJavaScriptライブラリを使ってPEG文法を使います。プリプロセッサーとメインパーサーの両方のPEGグラマーがGithub[のソースコード](https://github.com/ShaderFrog/glsl-parser)にあります。
 
 このライブラリはTypeScriptとJavaScriptの限定的なサポートがあります。
 
