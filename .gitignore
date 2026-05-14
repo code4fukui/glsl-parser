@@ -2,3 +2,7 @@ node_modules
 dist
 .vscode
 .DS_Store
+
+# auto-added by meta-ops
+node_modules/
+Thumbs.db
