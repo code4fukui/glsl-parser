@@ -83,7 +83,7 @@ import {
   preprocessComments,
   generate,
   parser,
-} from "https://code4fpkui.github.io/glsl-parser/Preprocessor.js";;
+} from "~~https://code4fpkui.github.io/glsl-parser/Preprocessor.js~~ *(unavailable)*";;
 
 // プリプロセス前にコメントを削除する
 const commentsRemoved = preprocessComments(`float a = 1.0;`)
